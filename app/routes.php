@@ -21,14 +21,19 @@ Route::get('/home', 'HomeController@showWelcome');
 */
 
 //トピックのルーティング(Adminツール)
-Route::group(['prefix' => 'admin'], function() {
-	Route::get('/'				,'HomeController@control_index');
-	Route::get('/topics/index'	,'TopicController@control_index');
+Route::group(array('before' => 'auth.basic.admin'), function(){
+	Route::group(['prefix' => 'admin'], function() {
+		//Adminツール：top
+		Route::get(  '/'					 	  ,'HomeController@control_index');
+		//Adminツール：最新情報
+		Route::get(  '/topics/index'		 	  ,'TopicController@control_index');
+		Route::get(  '/topics/add'			 	  ,'TopicController@control_add');
+		Route::post( '/topics/add_complete'	 	  ,'TopicController@control_add_complete');
+		Route::get(  '/topics/edit/{id}'	 	  ,'TopicController@control_edit');
+		Route::post( '/topics/edit_complete' 	  ,'TopicController@control_edit_complete');
+		Route::get(  '/topics/delete/{id}'	 	  ,'TopicController@control_delete');
+	});
 });
 
 //トピックのルーティング(ガワアプリ)
 Route::get('/topics/index'	,'TopicController@index');
-
-/*
-Route::get('/topics/{id}', 'TopicController@show');
-*/

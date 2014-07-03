@@ -6,6 +6,10 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1">
 <link media="all" type="text/css" rel="stylesheet" href="/asset/css/bootstrap.css">
 <link media="all" type="text/css" rel="stylesheet" href="/asset/css/bootstrap-theme.css">
+<link media="all" type="text/css" rel="stylesheet" href="/asset/css/datepicker.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="/asset/js/bootstrap.min.js"></script>
+<script src="/asset/js/bootstrap-datepicker.js"></script>
 </head>
 <body style="padding-top:50px;" role="document">
 
@@ -30,12 +34,12 @@
 	    <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">マスターデータ管理<b class="caret"></b></a>
             <ul class="dropdown-menu">
-			  <li class="dropdown-header">アプリ内コンテンツ管理</li>
-              <li><a href="#">最新情報の管理</a></li>
+			  <li class="dropdown-header">&gt;&nbsp;アプリ内コンテンツ管理</li>
+              <li><a href="/admin/topics/index">最新情報の管理</a></li>
 			  <li><a href="#">飲食店紹介の管理</a></li>
 			  <li><a href="#">セレクトショップの管理</a></li>
 			  <li class="divider"></li>
-			  <li class="dropdown-header">デザインコンテンツの管理</li>
+			  <li class="dropdown-header">&gt;&nbsp;デザインコンテンツ管理</li>
 			  <li><a href="#">スライドメニューの管理</a></li>
 			  <li><a href="#">ポップアップ広告の管理</a></li>
 			</ul>
@@ -45,7 +49,7 @@
 	    <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">ユーザーデータ管理<b class="caret"></b></a>
             <ul class="dropdown-menu">
-			  <li class="dropdown-header">アプリ内コンテンツ管理</li>
+			  <li class="dropdown-header">&gt;&nbsp;アプリ内コンテンツ管理</li>
               <li><a href="#">郷土料理紹介（投稿）の管理</a></li>
 			  <li><a href="#">郷土料理紹介（コメント）の管理</a></li>
 			  <li><a href="#">郷土料理紹介（ユーザー情報）の管理</a></li>
@@ -64,7 +68,12 @@
 
 @yield('content')
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<script src="/asset/js/bootstrap.min.js"></script>
+<hr>
+<footer class="footer">
+  <div class="container">
+    <p>Copyright &copy; 2014 土地の味 All Rights Reserverd.</p>
+  </div>
+</footer>
+
 </body>
 </html>

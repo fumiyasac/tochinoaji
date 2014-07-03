@@ -78,3 +78,23 @@ Route::filter('csrf', function()
 		throw new Illuminate\Session\TokenMismatchException;
 	}
 });
+
+
+/*
+2014-06-24 fumiya added.
+Adminツール用Basic認証	
+*/
+Route::filter('auth.basic.admin', function()
+{
+	if(!isset($_SERVER['PHP_AUTH_USER']) || !isset($_SERVER['PHP_AUTH_PW']))
+	{
+		return Response::make('Please enter username and password', 401, array('WWW-Authenticate' => 'Basic realm="my site"'));
+	}
+	
+	if($_SERVER['PHP_AUTH_USER'] != 'superuser' || $_SERVER['PHP_AUTH_PW'] != 'tochinoaji1406')
+	{
+		return Response::make('Please enter username and password', 401, array('WWW-Authenticate' => 'Basic realm="my site"'));
+	}
+});
+
+
