@@ -32,6 +32,13 @@ Route::group(array('before' => 'auth.basic.admin'), function(){
 		Route::get(  '/topics/edit/{id}'	 	  ,'TopicController@control_edit');
 		Route::post( '/topics/edit_complete' 	  ,'TopicController@control_edit_complete');
 		Route::get(  '/topics/delete/{id}'	 	  ,'TopicController@control_delete');
+		//Adminツール：スライド
+		Route::get(  '/slides/index'		 	  ,'SlideController@control_index');
+		Route::get(  '/slides/add'			 	  ,'SlideController@control_add');
+		Route::post( '/slides/add_complete'	 	  ,'SlideController@control_add_complete');
+		Route::get(  '/slides/edit/{id}'	 	  ,'SlideController@control_edit');
+		Route::post( '/slides/edit_complete' 	  ,'SlideController@control_edit_complete');
+		Route::get(  '/slides/delete/{id}'	 	  ,'SlideController@control_delete');
 	});
 });
 

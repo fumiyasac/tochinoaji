@@ -4,8 +4,8 @@
 <div class="container">
 
 	<div class="page-header">
-    	<h1>トピック情報の新規追加</h1>
-		<p class="lead">トピック情報の新規追加を行います。</p>
+    	<h1>TOPページスライド情報の新規追加</h1>
+		<p class="lead">TOPページスライド情報の新規追加を行います。</p>
 	</div>
 	
 	<br>
@@ -19,7 +19,7 @@
 		    <ol>
 		    	<li>必須項目を入力しているかを確認して下さい。</li>
 		    	<li>初回登録時は「非公開状態」で設定されます。</li>
-		    	<li>画像は640×480ピクセルにリサイズされます。<br>また、サムネイルは100×75ピクセルになります。</li>
+		    	<li>画像は640×290ピクセルにリサイズされます。<br>また、サムネイルは100×75ピクセルになります。</li>
 		    </ol>
 		    
 		    <ul>
@@ -45,7 +45,7 @@
 				<th width="20%">画像</th>
 				<td width="5%"><span class="label label-danger">必須項目</span></td>
 				<td>
-					<input name="eyecatch" type="file" id="inputTopicImage" class="" placeholder="画像をアップして下さい" />
+					<input name="eyecatch" type="file" id="inputSlideImage" class="" placeholder="画像をアップして下さい" />
 				</td>
 			</tr>
 			<tr>

@@ -41,6 +41,7 @@
 				<th>削除</th>
 			</tr>
 			
+			@if(!empty($topics))
 			@foreach($topics as $topic)
 			<tr>
 				<td>{{$topic->topic_id}}</td>
@@ -65,13 +66,16 @@
 				</td>
 			</tr>
 			@endforeach
+			@endif
 			
 		</table>
 	</div>
 	
 	<!-- ページネーション -->
 	<div>
+		@if(!empty($topics))
 		{{$topics->links()}}
+		@endif
 	</div>
 		
 	<!-- 削除ボタン用 -->

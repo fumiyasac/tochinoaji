@@ -40,7 +40,7 @@
 			  <li><a href="#">セレクトショップの管理</a></li>
 			  <li class="divider"></li>
 			  <li class="dropdown-header">&gt;&nbsp;デザインコンテンツ管理</li>
-			  <li><a href="#">スライドメニューの管理</a></li>
+			  <li><a href="/admin/slides/index">スライドメニューの管理</a></li>
 			  <li><a href="#">ポップアップ広告の管理</a></li>
 			</ul>
         </li>
