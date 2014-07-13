@@ -35,7 +35,7 @@
 				<th colspan="3">入力項目</th>
 			</tr>
 			<tr>
-				<th width="20%">トピックID</th>
+				<th width="20%">スライド画像ID</th>
 				<td width="5%"><span class="label label-warning">primary</span></td>
 				<td>
 					{{$slide->slide_id}}
