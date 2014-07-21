@@ -5,7 +5,7 @@
 
 	<div class="page-header">
     	<h1>TOPページスライド情報の管理</h1>
-		<p class="lead">TOPページスライドの最新情報の管理を行います。</p>
+		<p class="lead">TOPページスライドの管理を行います。</p>
 	</div>
 
     <h3>TOPページスライド情報とは？</h3>

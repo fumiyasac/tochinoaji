@@ -41,7 +41,7 @@
 			  <li class="divider"></li>
 			  <li class="dropdown-header">&gt;&nbsp;デザインコンテンツ管理</li>
 			  <li><a href="/admin/slides/index">スライドメニューの管理</a></li>
-			  <li><a href="#">ポップアップ広告の管理</a></li>
+			  <li><a href="/admin/banners/index">バナー広告の管理</a></li>
 			</ul>
         </li>
 		
@@ -53,6 +53,10 @@
               <li><a href="#">郷土料理紹介（投稿）の管理</a></li>
 			  <li><a href="#">郷土料理紹介（コメント）の管理</a></li>
 			  <li><a href="#">郷土料理紹介（ユーザー情報）の管理</a></li>
+			  <li class="divider"></li>
+			  <li class="dropdown-header">&gt;&nbsp;KPI管理</li>
+			  <li><a href="#">集計内容1</a></li>
+			  <li><a href="#">集計内容2</a></li>
 			</ul>
         </li>
         

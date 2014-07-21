@@ -39,6 +39,13 @@ Route::group(array('before' => 'auth.basic.admin'), function(){
 		Route::get(  '/slides/edit/{id}'	 	  ,'SlideController@control_edit');
 		Route::post( '/slides/edit_complete' 	  ,'SlideController@control_edit_complete');
 		Route::get(  '/slides/delete/{id}'	 	  ,'SlideController@control_delete');
+		//Adminツール：バナー広告
+		Route::get(  '/banners/index'		 	  ,'BannerController@control_index');
+		Route::get(  '/banners/add'			 	  ,'BannerController@control_add');
+		Route::post( '/banners/add_complete'	  ,'BannerController@control_add_complete');
+		Route::get(  '/banners/edit/{id}'	 	  ,'BannerController@control_edit');
+		Route::post( '/banners/edit_complete' 	  ,'BannerController@control_edit_complete');
+		Route::get(  '/banners/delete/{id}'	 	  ,'BannerController@control_delete');
 	});
 });
 
