@@ -55,6 +55,10 @@
 			  <li><a href="#">郷土料理紹介（コメント）の管理</a></li>
 			  <li><a href="#">郷土料理紹介（ユーザー情報）の管理</a></li>
 			  <li class="divider"></li>
+			  <li class="dropdown-header">&gt;&nbsp;お問い合わせ管理</li>
+			  <li><a href="#">インクワイアリー管理</a></li>
+			  <li><a href="#">アンケート管理</a></li>
+			  <li class="divider"></li>
 			  <li class="dropdown-header">&gt;&nbsp;KPI管理</li>
 			  <li><a href="#">集計内容1</a></li>
 			  <li><a href="#">集計内容2</a></li>
