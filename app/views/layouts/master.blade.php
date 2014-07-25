@@ -36,6 +36,7 @@
             <ul class="dropdown-menu">
 			  <li class="dropdown-header">&gt;&nbsp;アプリ内コンテンツ管理</li>
               <li><a href="/admin/topics/index">最新情報の管理</a></li>
+              <li><a href="/admin/specials/index">特集記事の管理</a></li>
 			  <li><a href="#">飲食店紹介の管理</a></li>
 			  <li><a href="#">セレクトショップの管理</a></li>
 			  <li class="divider"></li>

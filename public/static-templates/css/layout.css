@@ -1,0 +1,432 @@
+@charset "utf-8";
+/* CSS Documents */
+/*
+    layout.css
+	
+	Fumiya Sakai(Just One Factory). 
+
+	01: base
+
+*/
+
+/* ============================================================
+01: base
+============================================================ */
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+line-height: 1.65;
+color: #333333;
+font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+font-size: 13px;
+word-break: break-all;
+-webkit-text-size-adjust: none;
+}
+
+/* header */
+body > header{
+border-bottom: 1px solid #d9d9d9;
+}
+
+body > header h1{
+height:80px;
+display:block;
+text-indent:-9999px;
+background:url(../images/common/logo.png) 50% 50% no-repeat;
+background-size:250px 50px;
+-moz-background-size:250px 50px;
+-webkit-background-size:250px 50px;
+-o-background-size:250px 50px;
+-ms-background-size:250px 50px;
+}
+
+/* footer */
+body > footer{
+border-top: 1px solid #d9d9d9;
+clear:both;
+}
+
+body > footer p{
+font-size: 12px;
+text-align: center;
+margin: 15px 0;
+}
+
+/* midashi */
+article.index > section h2,
+article.view > section h2{
+height:25px;
+background-color:#f28122;
+line-height:25px;
+color:#FFFFFF;
+font-size:14px;
+padding: 2px 10px 0;
+}
+
+section.contentParts{
+clear: both;
+}
+
+section.contentParts > section.navTypeA,
+section.contentParts > section.navTypeB{
+height: auto !important;
+min-height: 80px;
+border-bottom: 1px solid #d9d9d9;
+}
+
+section.contentParts > section.navTypeA a,
+section.contentParts > section.navTypeB a{
+display: block;
+height: auto !important;
+min-height: 80px;
+padding-right: 40px;
+position: relative;
+text-decoration: none;
+overflow: hidden;
+}
+
+section.contentParts > footer{
+margin: 0 10px;
+font-size: 14px;
+}
+
+section.contentParts > footer p.explainText{
+margin-top: 5px;
+}
+
+section.contentParts > footer p.footerLink{
+text-align: right;
+margin-bottom: 5px;
+}
+
+section.contentParts > footer p.footerLink a{
+color: #1e6daa;
+text-decoration: none;
+text-align: right;
+}
+
+section.contentParts > footer div{
+}
+
+section.contentParts > footer div ul.authLink{
+list-style-type: none;
+display: block;
+width: 300px;
+height: auto;
+margin: 5px auto 0;
+}
+
+section.contentParts > footer div ul.authLink li{
+color: #ffffff;
+display: block;
+float: left;
+margin-bottom: 10px;
+}
+
+section.contentParts > footer div ul.authLink li.twitterBtn a{
+display: block;
+width: 135px;
+background-color: #80c0e9;
+padding: 5px;
+color: #ffffff;
+font-weight: bold;
+text-align: center;
+text-decoration: none;
+font-size: 12px;
+margin-right: 10px;
+}
+
+section.contentParts > footer div ul.authLink li.facebookBtn a{
+display: block;
+width: 135px;
+background-color: #344b8b;
+padding: 5px;
+color: #ffffff;
+font-weight: bold;
+text-align: center;
+text-decoration: none;
+font-size: 12px;
+}
+
+/* navTypeA */
+section.contentParts > section.navTypeA a header h3{
+background: url("../images/common/icon_midashi.png") no-repeat scroll 0 40% / 7px 10px transparent;
+margin-top: 10px;
+padding-left: 14px;
+font-size: 14px;
+position: absolute;
+left: 110px;
+font-weight: normal;
+color: #333333;
+}
+
+section.contentParts > section.navTypeA a:before{
+background: url("../images/common/right_arrow_link.png") no-repeat scroll 0 0 / 20px 20px transparent;
+content: "";
+display: block;
+height: 20px;
+margin: -10px 0 0;
+position: absolute;
+right: 10px;
+top: 50%;
+width: 20px;
+}
+
+section.contentParts > section.navTypeA a .contentBody{	
+}
+
+section.contentParts > section.navTypeA a .contentBody .imageBox img{
+padding: 10px 0 10px 10px;
+vertical-align: bottom;
+}
+
+section.contentParts > section.navTypeA a .contentBody .subText{
+font-size: 12px;
+position: absolute;
+left: 110px;
+top: 32px;
+font-weight: normal;
+color: #bb4c1b;
+}
+
+section.contentParts > section.navTypeA a .contentBody .dateText{
+font-size: 12px;
+position: absolute;
+left: 110px;
+top: 52px;
+font-weight: normal;
+color: #ff0000;
+}
+
+/* navTypeB */
+section.contentParts > section.navTypeB a header h3{
+margin-top: 10px;
+padding-left: 14px;
+font-size: 14px;
+position: absolute;
+font-weight: normal;
+color: #333333;
+}
+
+section.contentParts > section.navTypeB a .contentBody{	
+}
+
+section.contentParts > section.navTypeB a .contentBody .imageBox img{
+padding: 10px 0 10px 10px;
+vertical-align: bottom;
+}
+
+section.contentParts > section.navTypeB a .contentBody .subText{
+font-size: 12px;
+padding-left: 14px;
+position: absolute;
+top: 32px;
+font-weight: normal;
+color: #bb4c1b;
+}
+
+section.contentParts > section.navTypeB a .contentBody .dateText{
+font-size: 12px;
+padding-left: 14px;
+position: absolute;
+top: 52px;
+font-weight: normal;
+color: #333333;
+}
+
+/* navTypeC */
+section.contentParts > section.navTypeC{
+height: auto !important;
+border-bottom: 1px solid #d9d9d9;
+}
+
+section.contentParts > section.navTypeC a{
+display: block;
+height: 100px;
+padding-right: 40px;
+position: relative;
+text-decoration: none;
+overflow: hidden;
+}
+
+section.contentParts > section.navTypeC a header h3{
+background: url("../images/common/icon_midashi.png") no-repeat scroll 0 40% / 7px 10px transparent;
+margin-top: 10px;
+padding-left: 14px;
+font-size: 14px;
+position: absolute;
+left: 110px;
+font-weight: normal;
+color: #333333;
+}
+
+section.contentParts > section.navTypeC a:before{
+background: url("../images/common/right_arrow_toggle.png") no-repeat scroll 0 0 / 20px 20px transparent;
+content: "";
+display: block;
+height: 20px;
+margin: -10px 0 0;
+position: absolute;
+right: 10px;
+top: 50%;
+width: 20px;
+}
+
+section.contentParts > section.navTypeC a header h3{
+margin-top: 10px;
+padding-left: 14px;
+font-size: 14px;
+position: absolute;
+font-weight: normal;
+color: #333333;
+}
+
+section.contentParts > section.navTypeC a .contentBody{	
+}
+
+section.contentParts > section.navTypeC a .contentBody .imageBox img{
+padding: 10px 0 10px 10px;
+vertical-align: bottom;
+}
+
+section.contentParts > section.navTypeC a .contentBody .subText{
+font-size: 12px;
+position: absolute;
+left: 110px;
+top: 32px;
+font-weight: normal;
+color: #bb4c1b;
+}
+
+section.contentParts > section.navTypeC a .contentBody .prefText{
+font-size: 12px;
+position: absolute;
+left: 110px;
+top: 52px;
+font-weight: normal;
+color: #ffa200;
+}
+
+section.contentParts > section.navTypeC a .contentBody .keisaiText{
+font-size: 12px;
+position: absolute;
+left: 110px;
+top: 72px;
+font-weight: normal;
+color: #333333;
+}
+
+
+/* contentTypeA */
+section.contentParts > section.contentTypeA div{
+padding: 10px 0 7px;
+width: 320px;
+height: auto;
+margin: 0 auto;
+}
+
+section.contentParts > section.contentTypeA div .bannerBox img{
+vertical-align: bottom;
+}
+
+section.contentParts > section.contentTypeA header h3{
+font-size: 14px;
+padding: 0 10px 0;
+font-weight: normal;
+color: #333333;
+}
+
+section.contentParts > section.contentTypeA section{
+padding: 0 10px 10px;
+border-bottom: 1px solid #d9d9d9;
+}
+
+section.contentParts > section.contentTypeA section p{
+font-size: 12px;
+font-weight: normal;
+color: #bb4c1b;
+}
+
+/* contentTypeDetail */
+section.contentParts > section.contentTypeDetail header h3{
+background: url("../images/common/icon_midashi.png") no-repeat scroll 0 55% / 7px 10px transparent;
+margin-left: 10px;
+text-indent: 3px;
+font-size: 14px;
+padding: 10px 10px 0;
+font-weight: normal;
+color: #333333;
+}
+
+section.contentParts > section.contentTypeDetail ul{
+list-style-type: none;
+margin: 3px 10px 5px;
+}
+
+section.contentParts > section.contentTypeDetail ul li{
+font-size: 12px;
+line-height: 1.8;
+padding: 4px 0;
+}
+
+section.contentParts > section.contentTypeDetail ul li strong{
+margin-right: 5px;
+}
+
+.userArea{
+padding: 4px;
+background-color: #8da23a;
+color: #ffffff;
+}
+
+.prefArea{
+padding: 4px;
+background-color: #368c3c;
+color: #ffffff;
+}
+
+.publish{
+padding: 4px;
+background-color: #854319;
+color: #ffffff;
+}
+
+section.contentParts > section.contentTypeDetail section.paragraph{
+padding: 0 10px 10px;
+border-bottom: 1px solid #d9d9d9;
+}
+
+section.contentParts > section.contentTypeDetail section.paragraph header h4{
+color: #ffa200;
+font-size: 13px;
+margin: 7px 0;
+}
+
+section.contentParts > section.contentTypeDetail section.paragraph div{
+height: auto;
+overflow: hidden;
+}
+
+section.contentParts > section.contentTypeDetail section.paragraph div p{
+font-size: 12px;
+font-weight: normal;
+color: #bb4c1b;
+line-height: 1.7;
+display: block;
+}
+
+section.contentParts > section.contentTypeDetail section.paragraph div p.imageSub{
+float: left;
+display: block;
+height: 150px;
+width: 100px;
+padding-right: 10px;
+padding-bottom: 10px;
+}
+
+section.contentParts > section.contentTypeDetail section.paragraph div p.imageSub img{
+vertical-align: bottom;
+}
