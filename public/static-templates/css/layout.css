@@ -211,6 +211,18 @@ font-weight: normal;
 color: #333333;
 }
 
+section.contentParts > section.navTypeB a:before{
+background: url("../images/common/right_arrow_link.png") no-repeat scroll 0 0 / 20px 20px transparent;
+content: "";
+display: block;
+height: 20px;
+margin: -10px 0 0;
+position: absolute;
+right: 10px;
+top: 50%;
+width: 20px;
+}
+
 section.contentParts > section.navTypeB a .contentBody{	
 }
 
@@ -421,8 +433,8 @@ display: block;
 section.contentParts > section.contentTypeDetail section.paragraph div p.imageSub{
 float: left;
 display: block;
-height: 150px;
-width: 100px;
+height: 210px;
+width: 150px;
 padding-right: 10px;
 padding-bottom: 10px;
 }
