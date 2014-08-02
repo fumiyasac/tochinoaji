@@ -46,6 +46,14 @@ Route::group(array('before' => 'auth.basic.admin'), function(){
 		Route::get(  '/banners/edit/{id}'	 	  ,'BannerController@control_edit');
 		Route::post( '/banners/edit_complete' 	  ,'BannerController@control_edit_complete');
 		Route::get(  '/banners/delete/{id}'	 	  ,'BannerController@control_delete');
+		//Adminツール：特集記事
+		Route::get(  '/specials/index'		 	  ,'SpecialController@control_index');
+		Route::get(  '/specials/add'			  ,'SpecialController@control_add');
+		Route::post( '/specials/add_complete'	  ,'SpecialController@control_add_complete');
+		Route::get(  '/specials/edit/{id}'	 	  ,'SpecialController@control_edit');
+		Route::post( '/specials/edit_complete' 	  ,'SpecialController@control_edit_complete');
+		Route::get(  '/specials/delete/{id}'	  ,'SpecialController@control_delete');
+		Route::get(  '/specials/view/{id}'	 	  ,'SpecialController@control_view');
 	});
 });
 
