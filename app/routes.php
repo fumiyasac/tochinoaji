@@ -58,4 +58,6 @@ Route::group(array('before' => 'auth.basic.admin'), function(){
 });
 
 //トピックのルーティング(ガワアプリ)
+
+//ガワアプリ：最新情報
 Route::get('/topics/index'	,'TopicController@index');
