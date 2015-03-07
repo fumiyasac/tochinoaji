@@ -54,6 +54,14 @@ Route::group(array('before' => 'auth.basic.admin'), function(){
 		Route::post( '/specials/edit_complete' 	  ,'SpecialController@control_edit_complete');
 		Route::get(  '/specials/delete/{id}'	  ,'SpecialController@control_delete');
 		Route::get(  '/specials/view/{id}'	 	  ,'SpecialController@control_view');
+		//Adminツール：店舗記事
+		Route::get(  '/shops/index'		 	  	  ,'ShopController@control_index');
+		Route::get(  '/shops/add'			  	  ,'ShopController@control_add');
+		Route::post( '/shops/add_complete'	  	  ,'ShopController@control_add_complete');
+		Route::get(  '/shops/edit/{id}'	 	  	  ,'ShopController@control_edit');
+		Route::post( '/shops/edit_complete'   	  ,'ShopController@control_edit_complete');
+		Route::get(  '/shops/delete/{id}'	  	  ,'ShopController@control_delete');
+		Route::get(  '/shops/view/{id}'	 	  	  ,'ShopController@control_view');
 	});
 });
 

@@ -6,7 +6,7 @@
 	"require": {
 		"laravel/framework": "4.1.*",
 		"barryvdh/laravel-debugbar": "1.*",
-		"codesleeve/laravel-stapler": "1.0.*"
+		"codesleeve/laravel-stapler": "1.0.02"
 	},
 	"autoload": {
 		"classmap": [
